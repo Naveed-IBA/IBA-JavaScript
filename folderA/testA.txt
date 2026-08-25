@@ -1,5 +1,0 @@
-dir
-sda
-cd
-stop
-asda
