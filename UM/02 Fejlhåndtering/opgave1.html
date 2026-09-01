@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opgave 1</title>
+</head>
+<body>
+    <script>
+        let userInput = prompt("Input an expression:")
+        
+        try {
+            eval(userInput)
+        } catch (error) {
+            console.log(`Error name: ${error.name},\nError 2: ${error.message},\nError 3: ${error.stack},\nUser input: ${userInput}`);
+        }
+    </script>
+</body>
+</html>
