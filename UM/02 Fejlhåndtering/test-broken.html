@@ -6,9 +6,20 @@
   <title>Opgave 3</title>
 </head>
 <body>
-  <h2>Pige-drenge-par</h2>
-  <ul id="output"></ul>
-
+  <h2 style="margin-bottom: 0">Pige og drenge par:</h2>
+  <ul style="margin-top: 0" id="output"></ul>
+  <br>
+  <h3>Når programmet gør hvad det skal, overvej dets tidskompleksitet, altså programmets tidsbehov som funktion af inputstrengens længde.</h3>
+  <ul style="font-weight: bold;">Hvor mange gange kører loopet?
+    <li style="font-weight: normal;">
+      Loopet kører 4 gange, da hver iteration kører gennem ét par (en pige og en dreng). Dette kan generaliseres som hvis der er <code>n</code> piger (og <code>n</code> drenge), kører loopet <code>n</code> gange.
+    </li>
+    <br>Hvad er forholdet mellem inputtet og antallet af operationer?
+    <li style="font-weight: normal;">
+      Når antallet af operationer stiger direkte proportionalt med inputtet, (f.eks. hvis man fordobler inputtet, fordobler man også arbejdsmængden) kaldes det lineær tid, hvilket skrives som <code>O(n)</code> eller O-notation. <br>
+      Her repræsenterer <code>n</code> inputsstørrelsen (antallet af piger/drenge).
+    </li>
+  </ul>
   <script src="test-broken.js"></script>
 </body>
 </html>
