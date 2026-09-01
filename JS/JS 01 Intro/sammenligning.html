@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <p id="output3"></p>
+
+    <script>
+        const x = NaN;
+        const y = NaN;
+
+        let first = x == y;
+        document.getElementById("output1").textContent=(first);
+
+        let second = x === y;
+        document.getElementById("output2").textContent=(second);
+
+        let third = Object.is(x, y);
+        document.getElementById("output3").textContent=(third);
+    </script>
+</body>
+</html>
